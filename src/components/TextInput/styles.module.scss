@@ -1,0 +1,15 @@
+.input {
+  width: 100%;
+  height: 32px;
+  border: solid var(--main_color) 1px;
+  box-sizing: border-box;
+  font-family: var(--main_font);
+
+  &:focus {
+    outline: solid var(--main_color) 2px;
+  }
+
+  @media screen and (max-width: 900px) {
+    border-radius: 0;
+  }
+}

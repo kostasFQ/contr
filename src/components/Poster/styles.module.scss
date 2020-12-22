@@ -1,0 +1,83 @@
+.poster {
+  display: flex;
+  justify-content: center;
+  z-index: 5;
+
+  @media screen and (min-width: 900px) {
+    background-color: var(--main_color);
+  }
+
+  &__content {
+    position: relative;
+    height: 55vh;
+    display: flex;
+    // overflow: hidden;
+    // &::after {
+    //   content: '';
+    //   border: solid cyan 1px;
+    //   height: 50%;
+    //   width: 100%;
+    //   position: absolute;
+    // }
+    // &::before {
+    //   content: '';
+    //   border: solid cyan 1px;
+    //   height: 100%;
+    //   width: 50%;
+    //   position: absolute;
+    // }
+
+    @media screen and (max-width: 900px) {
+      width: 100vw;
+      height: calc(100vw / 1.9);
+    }
+  }
+
+  &__text {
+    box-sizing: border-box;
+    position: relative;
+    color: #fff;
+    z-index: 20;
+    font-weight: bold;
+
+    // & > span {
+    //   height: 100%;
+    //   width: 100%;
+
+    //   &::after {
+    //     content: '';
+    //     border: dashed red 2px;
+    //     height: 50%;
+    //     width: 100%;
+    //     left: 0;
+    //     position: absolute;
+    //   }
+    //   &::before {
+    //     content: '';
+    //     border: dashed red 2px;
+    //     height: 100%;
+    //     width: 50%;
+    //     position: absolute;
+    //   }
+    // }
+  }
+
+  &__img {
+    position: absolute;
+    overflow: hidden;
+
+    & > div {
+      background-repeat: no-repeat;
+      background-size: auto 100%;
+      background-position: center;
+      cursor: move;
+      height: 100%;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    // &:hover {
+    //   border: solid white 1px;
+    // }
+  }
+}

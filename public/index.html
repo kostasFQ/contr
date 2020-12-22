@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <title>Bud Conctructor</title>
+  </head>
+  <body>
+    <!-- Load Facebook SDK for JavaScript -->
+    <script>
+      window.fbAsyncInit = function () {
+        FB.init({
+          appId: "your-app-id",
+          autoLogAppEvents: true,
+          xfbml: true,
+          version: "v9.0",
+        });
+      };
+    </script>
+    <script
+      async
+      defer
+      crossorigin="anonymous"
+      src="https://connect.facebook.net/en_US/sdk.js"
+    ></script>
+
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+  </body>
+</html>

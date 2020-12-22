@@ -1,0 +1,41 @@
+.resultPage {
+  width: 100%;
+  height: auto;
+  opacity: 1;
+  transition: 1s;
+  font-family: 'GothamPro';
+  
+  & > div:first-child {
+    background-color: var(--main_color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  &__hided {
+    opacity: 0;
+    transition: 1s;
+  }
+  
+  &__img {
+    width: 80%;
+    height: auto;
+  }
+
+  &__buttonBlock {
+    margin: 1em 5em;
+    
+    &__shared {
+      margin-top: 2em;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      column-gap: 5em;
+
+    }
+  }
+
+  &__sharedButtons {
+    border: solid red 3px;
+    // display: flex;
+  }
+}

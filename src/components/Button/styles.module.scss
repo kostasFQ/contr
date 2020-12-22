@@ -1,0 +1,53 @@
+.commonButton {
+  border: solid var(--main_color) 1px;
+  color: var(--main_color);
+  padding: 0.7em 1em;
+  cursor: pointer;
+  width: 100%;
+  text-transform: capitalize;
+  background-color: #fff;
+  font-family: "GothamPro";
+  font-weight: 700;
+  // font-size: 20px;
+
+  &:focus {
+    outline: none;
+  }
+
+  @media screen and (max-width: 900px) {
+    font-size: 12px;
+  }
+}
+
+.button {
+  &__font {
+    &_normal {
+      font-size: 12px;
+
+      @media screen and (max-width: 900px) {
+        font-size: 10px;
+      }
+    }
+
+    &_large {
+      font-size: 20px;
+    }
+  }
+
+  &__default {
+    @extend .commonButton;
+
+    &:active {
+      color: white;
+      background-color: var(--main_color);
+      outline: none;
+    }
+  }
+
+  &__primary {
+    @extend .commonButton;
+
+    color: white;
+    background-color: var(--main_color);
+  }
+}

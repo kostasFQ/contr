@@ -1,0 +1,10 @@
+.timePicker {
+  border: solid var(--main_color) 1px;
+  height: 32px;
+  width: 100%;
+  box-sizing: border-box;
+
+  @media screen and (max-width: 900px) {
+    border-radius: 0;
+  }
+}

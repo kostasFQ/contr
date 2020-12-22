@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+  min-width: 360px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", "GothamPro", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  --main_color: #b42532;
+  --main_font: "GothamPro";
+  
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+@font-face {
+  font-family: "GothamPro";
+  src: url("assets/fonts/GothamPro.ttf");
+}
+
+@font-face {
+  font-family: "electro";
+  src: url("assets/fonts/electro/Facon-BoldItalic.woff"), url("assets/fonts/electro/Electro_19845.otf");
+}
+
+@font-face {
+  font-family: "house";
+  src: url("assets/fonts/house/PowerhouseRUS2.woff"), url("assets/fonts/house/House_16498.otf");
+}
+
+@font-face {
+  font-family: "punk";
+  src: url("assets/fonts/punk/CaptureSmallz.woff"), url("assets/fonts/punk/Punk_20082.ttf");
+}
+
+@font-face {
+  font-family: "techno";
+  src: url("assets/fonts/techno/SeldomScene-Regular.woff"), url("assets/fonts/techno/Techno_B6lG.ttf");
+}
+
+@font-face {
+  font-family: "trance";
+  src: url("assets/fonts/trance/SpaceAgeCyrillic-Regular.woff"), url("assets/fonts/trance/Trance_19797.glyphs"),
+    url("assets/fonts/trance/Trance_19797.ttf");
+}
